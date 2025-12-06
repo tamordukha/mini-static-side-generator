@@ -1,0 +1,14 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+env/
+
+# Build output
+site/
+
+# OS files
+.DS_Store
+Thumbs.db
