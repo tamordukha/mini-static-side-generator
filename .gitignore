@@ -1,14 +1,38 @@
-# Byte-compiled / optimized / DLL files
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.pdb
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
-
-# Build output
-site/
+.venv/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# Model checkpoints
+*.ckpt
+*.pth
+*.h5
+
+# Logs
+*.log
+logs/
+
+# Cache
+.cache/
+.ipynb_checkpoints/
+
+# Build artifacts
+dist/
+build/
