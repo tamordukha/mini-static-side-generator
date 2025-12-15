@@ -13,6 +13,7 @@ ASSETS_DIR = Path("assets")
 
 # --- BUILD ---
 def build(force=False):
+    print("Build started!")
     """
     Собирает сайт.
     force=True  -> пересобрать все файлы, игнорируя mtime.
@@ -97,15 +98,19 @@ def serve(host="127.0.0.1", port=8000):
         print("Site directory does not exist. Run build() first.")
         return
 
-    prev_cwd = os.getcwd()
+    os.chdir("site")
+    server = HTTPServer(("localhost", 8000), SimpleHTTPRequestHandler)
+
+    print("Serving at http://localhost:8000")
+    print("Press CTRL+C to stop")
+
     try:
-        os.chdir(SITE_DIR)
-        server = HTTPServer((host, port), SimpleHTTPRequestHandler)
-        print(f"Serving at http://{host}:{port} (ctrl + C to stop)")
         server.serve_forever()
     except KeyboardInterrupt:
-        print("\nServer stopped by user.")
+        print("\nServer stopped")
     finally:
-        os.chdir(prev_cwd)
+        server.server_close()
+
+
 
 
