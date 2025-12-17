@@ -3,7 +3,7 @@ title: Home Page
 date: 2025-11-12
 ---
 
-# Welcome to My Static Site
+## Welcome to My Static Site
 
 This site was generated using my own static site generator written in Python.
 

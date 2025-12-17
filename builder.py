@@ -42,7 +42,7 @@ def build(force=False):
 
         # парсим md
         parsed = parse_markdown_file(md_path)
-        title = parsed.get("metadata", {}).get("title") or parsed.get("metadata", {}).get("name") or md_path.stem
+        title = parsed.get("metadata", {}).get("title") or md_path.stem
         date = parsed.get("metadata", {}).get("date")
         content_html = parsed.get("content", "None")
 

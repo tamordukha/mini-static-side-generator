@@ -35,12 +35,7 @@ def parse_markdown_file(path: Path) -> dict:
 
 
 def parse_front_matter(raw_meta: str) -> dict:
-    """
-    Парсинг front-matter вида:
-    title: My Page
-    date: 2025-12-01
-    tags: [python, blog]
-    """
+    
     metadata = {}
 
     for line in raw_meta.split("\n"):

@@ -3,7 +3,7 @@ title: About Me
 date: 2025-11-12
 ---
 
-# About Me
+### About Me
 
 Hi! My name is Tamerlan.  
 I'm a beginner Python developer and this is my first static site generator project.
